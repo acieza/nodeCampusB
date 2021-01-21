@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "6009ca5e63cbe61360068a74"
+  },
+  "titulo": "PSP",
+  "titulo2": "Programación de Servicios y Procesos",
+  "descripcion": "fasdfafd",
+  "descripcion2": "sadfasfdasdfas",
+  "descripcionGeneral": "asdfasdfasfdasdfasf",
+  "link": "asdfasdfasfd",
+  "precio": 300,
+  "tiempo": 150,
+  "imagen": "asdfadfasfd",
+  "imagen2": "adgfasdfasfa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6009ce288370f636c039248b"
+  },
+  "titulo": "PS",
+  "titulo2": "Programación de Servicios y Procesos",
+  "descripcion": "fasdfafd",
+  "descripcion2": "sadfasfdasdfas",
+  "descripcionGeneral": "asdfasdfasfdasdfasf",
+  "link": "asdfasdfasfd",
+  "precio": 300,
+  "tiempo": 150,
+  "imagen": "asdfadfasfd",
+  "imagen2": "adgfasdfasfa",
+  "__v": 0
+}]
