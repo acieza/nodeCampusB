@@ -14,14 +14,14 @@ const getCursos = async (req,res)=>{
 const crearCursos = async(req,res)=>{
 
       const{titulo} = req.body;
-  
+ /*
  const errores = validationResult(req) ;
     if(!errores.isEmpty()){
        return res.status(500).json({
             ok:false,
             error: errores.mapped()
     });
-}
+}*/
     
   
     try{

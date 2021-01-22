@@ -12,7 +12,8 @@ const cursoSchema = new mongoose.Schema({
     },
     titulo:{
         type:String,
-        required: true
+        required: true,
+        unique:true
     },
     titulo2:{
         type:String
