@@ -15,13 +15,13 @@ const crearCursos = async(req,res)=>{
 
 //     // const{email, password} = req.body;
   
-//     // const errores = validationResult(req) ;
-//     // if(!errores.isEmpty()){
-//     //    return res.status(500).json({
-//     //         ok:false,
-//     //         error: errores.mapped()
-//     });
-// }
+ const errores = validationResult(req) ;
+    if(!errores.isEmpty()){
+       return res.status(500).json({
+            ok:false,
+            error: errores.mapped()
+    });
+}
     
   
     try{

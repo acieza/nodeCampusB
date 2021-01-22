@@ -43,10 +43,10 @@ const cursoSchema = new mongoose.Schema({
 
 })
 
-// usuarioSchema.method('toJSON', function(){
-//     const{__v, _id, password} = this.toObject();
-//     object.identificador = _id;
-//     return object;
-// })
+ cursoSchema.method('toJSON', function(){
+     const{__v, _id, ...object} = this.toObject();
+     object.identificador = _id;
+     return object;
+ })
 
 module.exports = mongoose.model("Curso", cursoSchema);
