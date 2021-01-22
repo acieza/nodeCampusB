@@ -13,7 +13,7 @@ const getCursos = async (req,res)=>{
 
 const crearCursos = async(req,res)=>{
 
-//     // const{email, password} = req.body;
+      const{titulo} = req.body;
   
  const errores = validationResult(req) ;
     if(!errores.isEmpty()){
@@ -28,14 +28,14 @@ const crearCursos = async(req,res)=>{
         
         //Comprobar Email//
 
-        // const hayEmail = await Usuario.findOne({email});
+         const hayCurso = await Curso.findOne({titulo});
 
-        // if( hayEmail ){
-        //     return res.status(400).json({
-        //         ok:false,
-        //         msg:"El correo ya existe"
-        //     });
-        // }
+        if( hayCurso ){
+            return res.status(400).json({
+                ok:false,
+                msg:"El curso ya existe"
+            });
+        }
 
         //Guardar el Usuario//
 
