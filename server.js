@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
+
 
 const url = 'mongodb://localhost:27017/campus'
 
@@ -19,6 +21,13 @@ app.use(express.json());
 
 const RouterCurso = require('./routes/cursos');
 app.use('/cursos', RouterCurso);
+
+app.use('/usuarios', require('./routes/usuarios'))
+
+const loginRouter = require('./routes/login');
+app.use('/login', loginRouter);
+
+
  
 app.listen(3000, ()=>{
     console.log('SERVER ON');
