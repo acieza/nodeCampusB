@@ -60,9 +60,15 @@ const login = async (req,res) => {
 
     const token = await generarJWT(id);
 
+    //CARGAR VALORES DE USUARIO//
+
+    const usuario = await Usuario.findById(id)
+    //const usuarioLogin = await Usuario.findOne({email});
     res.json({
         ok:true,
-        token
+        usuario,
+        token,
+       
     })
  }
 

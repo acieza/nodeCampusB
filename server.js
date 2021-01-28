@@ -16,7 +16,7 @@ conexion.on('open', ()=>{
 })
 
 app.use(cors());
-//app.use(express.static('public'));
+app.use(express.static('public'));
 app.use(express.json());
 
 const RouterCurso = require('./routes/cursos');

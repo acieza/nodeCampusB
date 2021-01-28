@@ -20,14 +20,14 @@ const usuarioSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        required:true,
+        
         default: "user"
     }
 
 })
 
  usuarioSchema.method('toJSON', function(){
-     const{__v, password, role,  ...object} = this.toObject();
+     const{__v, password, _id, ...object} = this.toObject();
     
     return object;
  })
