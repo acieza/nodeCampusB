@@ -19,9 +19,12 @@ const usuarioSchema = new mongoose.Schema({
         type:String
     },
     role:{
-        type:String,
-        
+        type:String,   
         default: "user"
+    },
+    cursos: { 
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: "Curso"
     }
 
 })

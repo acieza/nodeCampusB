@@ -1,6 +1,7 @@
 const express = require('express');
 const Curso = require('../models/curso');
 const {validationResult} = require('express-validator');
+const clase = require('../models/clase');
 
 const getCursos = async (req,res)=>{
     try{
@@ -14,19 +15,10 @@ const getCursos = async (req,res)=>{
 const crearCursos = async(req,res)=>{
 
       const{titulo} = req.body;
- /*
- const errores = validationResult(req) ;
-    if(!errores.isEmpty()){
-       return res.status(500).json({
-            ok:false,
-            error: errores.mapped()
-    });
-}*/
-    
-  
+
     try{
         
-        //Comprobar Email//
+        //Comprobar Titulo//
 
          const hayCurso = await Curso.findOne({titulo});
 
@@ -37,7 +29,7 @@ const crearCursos = async(req,res)=>{
             });
         }
 
-        //Guardar el Usuario//
+        //Guardar el Curso//
 
         const curso = new Curso(req.body)
 
@@ -56,7 +48,24 @@ const crearCursos = async(req,res)=>{
 
 }
 
+const getCursosPopulate = async (req,res)=>{
+    try{
+        const curso = await Curso.find()
+        .select("_id titulo descripcion")
+        .populate("clases","nombre temas.nombreTema temas.link temas.detalle" )
+        .exec()
+        .then()
+        res.json(curso);
+    }catch(err){
+        res.send("Error" + err)
+    }
+}
+
+
+
+
 module.exports = {
     getCursos,
     crearCursos,
+    getCursosPopulate
 }

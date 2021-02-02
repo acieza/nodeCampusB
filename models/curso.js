@@ -22,16 +22,11 @@ const cursoSchema = new mongoose.Schema({
         type:String,
         required:true,      
     },
-    descripcion2:{
-        type:String,
-        required: true
-    },
     descripcionGeneral:{
         type:String
     },
     link:{
         type:String,
-        required:true,      
     },
     precio:{
         type:Number,
@@ -40,14 +35,22 @@ const cursoSchema = new mongoose.Schema({
     tiempo:{
         type:Number,
         required:true,      
-    }
+    },
+    oferta:{
+        type:Boolean,
+        default:false
+    },
+    clases: [{ 
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Clase"
+    }]
 
 })
 
- cursoSchema.method('toJSON', function(){
-     const{__v, _id, ...object} = this.toObject();
-     object.identificador = _id;
-     return object;
- })
+//  cursoSchema.method('toJSON', function(){
+//      const{__v, _id, ...object} = this.toObject();
+//      object.identificador = _id;
+//      return object;
+//  })
 
 module.exports = mongoose.model("Curso", cursoSchema);

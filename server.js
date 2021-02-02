@@ -22,11 +22,16 @@ app.use(express.json());
 const RouterCurso = require('./routes/cursos');
 app.use('/cursos', RouterCurso);
 
+const clasesRouter = require('./routes/clases');
+app.use('/clases', clasesRouter);
+
 app.use('/usuarios', require('./routes/usuarios'))
 
 const loginRouter = require('./routes/login');
 app.use('/login', loginRouter);
 
+const SubirRouter = require('./routes/subir');
+app.use('/subir', SubirRouter);
 
  
 app.listen(3000, ()=>{
