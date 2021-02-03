@@ -22,15 +22,15 @@ const usuarioSchema = new mongoose.Schema({
         type:String,   
         default: "user"
     },
-    cursos: { 
-        type: [mongoose.Schema.Types.ObjectId],
+    cursos: [{ 
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Curso"
-    }
+    }],
 
 })
 
  usuarioSchema.method('toJSON', function(){
-     const{__v, password, _id, ...object} = this.toObject();
+     const{__v, password, ...object} = this.toObject();
     
     return object;
  })
