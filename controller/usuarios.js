@@ -111,9 +111,11 @@ const modificarUsuario = async(req,res) =>{
     }
 }
 
+
 module.exports = {
     getUsuarios,
     crearUsuarios,
     getUsuariosPopulate,
-    modificarUsuario
+    modificarUsuario,
+   
 }

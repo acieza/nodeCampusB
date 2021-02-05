@@ -61,11 +61,22 @@ const getCursosPopulate = async (req,res)=>{
     }
 }
 
+const borrarCurso = async (req, res)=>{
+    try{
+        const curso = await Curso.findById(req.params.id)
+        const c1 = await curso.deleteOne()
+        res.json(c1)
+    }catch (error){
+        res.send('Error')
+    }
+    }
+
 
 
 
 module.exports = {
     getCursos,
     crearCursos,
-    getCursosPopulate
+    getCursosPopulate,
+    borrarCurso
 }

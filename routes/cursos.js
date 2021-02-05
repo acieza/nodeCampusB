@@ -4,13 +4,14 @@ const router = express.Router();
 const Curso = require('../models/curso');
 //const {getUsuarios, crearUsuarios} = require('../controller/usuarios');
 const { check } = require('express-validator');
-const { getCursos, crearCursos, getCursosPopulate } = require('../controller/cursos');
+const { getCursos, crearCursos, getCursosPopulate, borrarCurso } = require('../controller/cursos');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
 
 router.get('/',[],getCursos);
 
 router.get('/total', getCursosPopulate);
+router.delete('/:id', validarJWT, borrarCurso);
 
 router.post('/',[
     validarJWT,
