@@ -78,18 +78,25 @@ const getUsuariosPopulate = async (req,res)=>{
 
 const modificarUsuario = async(req,res) =>{
     try{
-        // const hayEmail = await Usuario.findOne({email});
-
-        // if( hayEmail ){
-        //     return res.status(400).json({
-        //         ok:false,
-        //         msg:"El correo ya existe"
-        //     });
+        const {email} =req.body
         
         const usuario = await Usuario.findById(req.params.id);
+
+        if(usuario.email != req.body.email){
+           
+      
+            const hayEmail = await Usuario.findOne({email});
+
+            if( hayEmail ){
+                    return res.status(400).json({
+                        ok:false,
+                        msg:"El correo ya existe"
+                    });
+        }
+    }
+        usuario.email = req.body.email
         usuario.img = req.body.img
         usuario.nombre = req.body.nombre
-        usuario.email = req.body.email
       
 
         const usuario1 = await usuario.save();
@@ -99,7 +106,7 @@ const modificarUsuario = async(req,res) =>{
             usuario
         })
         res.json(usuario1);
-    }catch{
+    }catch (err){
         res.send("Error " + err);
     }
 }

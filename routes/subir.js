@@ -15,7 +15,7 @@ router.post('/', upload.single('imagen'), async (req,res)=>{
     res.json({
         ok:true,
         msg:"Imagen subida con éxito",
-        nombre: req.file.filename + '.' + req.file.mimetype.split('/')[1]
+        nombreImg: req.file.filename + '.' + req.file.mimetype.split('/')[1]
 })
     }catch(err){
         res.status(500).json({
