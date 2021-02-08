@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario');
-const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarCurso} = require('../controller/usuarios');
+const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser} = require('../controller/usuarios');
 const { check } = require('express-validator');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
@@ -18,7 +18,7 @@ router.put('/:id',[
    
 ], modificarUsuario );
 
- 
+router.delete('/:id', validarJWT, borrarUser);
 
 router.post('/',[
     check('nombre',' El campo nombre es requerido').not().isEmpty(),

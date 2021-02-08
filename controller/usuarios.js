@@ -111,11 +111,21 @@ const modificarUsuario = async(req,res) =>{
     }
 }
 
+const borrarUser = async (req, res)=>{
+    try{
+        const user = await Usuario.findById(req.params.id)
+        const u1 = await user.deleteOne()
+        res.json(u1)
+    }catch (error){
+        res.send('Error')
+    }
+    }
+
 
 module.exports = {
     getUsuarios,
     crearUsuarios,
     getUsuariosPopulate,
     modificarUsuario,
-   
+    borrarUser
 }

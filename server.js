@@ -8,7 +8,12 @@ const url = 'mongodb://localhost:27017/campus'
 
 const app = express();
 
-mongoose.connect(url, {useNewUrlParser: true})
+mongoose.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify:false
+})
 const conexion = mongoose.connection;
 
 conexion.on('open', ()=>{
