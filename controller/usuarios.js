@@ -105,7 +105,7 @@ const modificarUsuario = async(req,res) =>{
             ok:true,
             usuario
         })
-        res.json(usuario1);
+        //res.json(usuario1);
     }catch (err){
         res.send("Error " + err);
     }
