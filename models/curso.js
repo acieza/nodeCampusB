@@ -4,11 +4,11 @@ const cursoSchema = new mongoose.Schema({
 
     imagen:{
         type:String,
-        required: true
+        
     },
     imagen2:{
         type:String,
-        required: true,
+       
     },
     titulo:{
         type:String,

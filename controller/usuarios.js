@@ -121,11 +121,85 @@ const borrarUser = async (req, res)=>{
     }
     }
 
+    const buscarProfesor = async(req,res)=>{
+        try{
+            const profe = await Usuario.find({role: "profesor"});
+            res.json(profe);
+        }catch{
+            res.send("Error " + err);
+        }
+    }
+
+    const buscarUser = async(req,res)=>{
+        try{
+            const user = await Usuario.find({role: "user"});
+            res.json(user);
+        }catch{
+            res.send("Error " + err);
+        }
+    }
+
+    const paginarUsuarios = async(req, res)=>{
+        const page = parseInt(req.query.page)
+        const limit = parseInt(req.query.limit)
+
+        const startIndex = (page -1)* limit
+        const endIndex = page * limit
+
+        const results = {}
+        const numRegistros = await Usuario.countDocuments().exec()
+
+        const paginas = parseFloat(numRegistros/ limit)
+        const fin = Math.ceil(paginas)
+        araryFin = [];
+        for (x=1; x<=fin; x++){
+            araryFin.push(x)
+        }
+    
+        results.todo = {
+            paginas: araryFin,
+            limite: limit
+        }
+
+        if(endIndex < await Usuario.countDocuments().exec()){
+            results.fin = {
+                paginas : page + 1,
+                limite : limit 
+            }
+        }
+
+        if(startIndex > 0){
+            results.inicio = {
+                paginas : page - 1,
+                limite : limit 
+            }
+        }
+
+        try{
+            results.result = await Usuario.find().limit(limit).skip(startIndex).exec()
+
+            res.json({
+                ok:true,
+                msg: '**** Lista de Usuarios devueltos ****',
+                nDocumentos: numRegistros,
+                results
+            })
+        }catch (err){
+            res.status(500).json({
+                ok:false,
+                msg: 'error de servidor'
+            })
+        }
+    }
+
 
 module.exports = {
     getUsuarios,
     crearUsuarios,
     getUsuariosPopulate,
     modificarUsuario,
-    borrarUser
+    borrarUser,
+    buscarProfesor,
+    buscarUser,
+    paginarUsuarios
 }
