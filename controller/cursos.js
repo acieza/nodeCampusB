@@ -88,9 +88,9 @@ const borrarCurso = async (req, res)=>{
             if(curso.titulo != req.body.titulo){
                
           
-                const titulo = await Curso.findOne({titulo});
+                 const haytitulo = await Curso.findOne({titulo});
     
-                if( titulo ){
+                if( haytitulo ){
                         return res.status(400).json({
                             ok:false,
                             msg:"El titulo ya existe"
