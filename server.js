@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
+const swaggerUI = require('swagger-ui-express');
 
 
 const url = 'mongodb://localhost:27017/campus'
@@ -38,6 +39,8 @@ app.use('/login', loginRouter);
 const SubirRouter = require('./routes/subir');
 app.use('/subir', SubirRouter);
 
+const swaggerDoc = require('./doc/swagger.json');
+app.use('/api-doc', swaggerUI.serve, swaggerUI.setup(swaggerDoc));
  
 app.listen(3000, ()=>{
     console.log('SERVER ON');

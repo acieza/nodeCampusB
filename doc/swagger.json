@@ -1,0 +1,208 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Api para Sistemas de Formación en Linea y Venta de Cursos",
+    "version": "0.1.0",
+    "title": "Api LMS",
+    "termsOfService": "http://localhost:3000",
+    "contact": {
+      "email": "asanjuancieza@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "usuarios",
+      "description": "CRUD de usuarios",
+      "externalDocs": {
+        "description": "más info",
+        "url": "http://localhost:3000"
+      }
+    },
+    {
+      "name": "cursos",
+      "description": "CRUD de cursos"
+    },
+    {
+      "name": "clases",
+      "description": "CRUD de clases"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/usuarios": {
+      "post": {
+        "tags": [
+          "usuarios"
+        ],
+        "summary": "Añadir nuevo usuario",
+        "description": "Añadir nuevo usuario",
+        "operationId": "addPet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Envía el objeto atraves del body con toda la información requerida",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Usuario"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Fallo de validación"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "usuarios"
+        ],
+        "summary": "Listar todos los Usuatios",
+        "description": "Listar Usuarios",
+        "operationId": "ListUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "400": {
+            "description": "Fallo de validación"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/usuarios/{id}": {
+      "put": {
+        "tags": [
+          "usuarios"
+        ],
+        "summary": "Modificar nuevo usuario",
+        "description": "Modificar nuevo usuario",
+        "operationId": "putUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Envía el objeto atraves del body con toda la información requerida",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Usuario"
+            }
+          }
+        ],
+        "int": "path",
+        "name": "id",
+        "descripcion": "id usuario",
+        "required": true,
+        "type": "string",
+        "responses": {
+          "400": {
+            "description": "Fallo de validación"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "mytoken",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Usuario": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "img": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "description": "Introduce el rol de usuario",
+          "default": "user",
+          "enum": [
+            "admin",
+            "profesor",
+            "user"
+          ]
+        },
+        "cursos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "nombre",
+        "email",
+        "password"
+      ]
+    },
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "type": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

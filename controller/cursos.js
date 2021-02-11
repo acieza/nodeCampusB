@@ -11,6 +11,14 @@ const getCursos = async (req,res)=>{
         res.send("Error" + err)
     }
 }
+const leerUser = async(req,res)=>{
+    try{
+        const curso = await Curso.findById(req.params.id);
+        res.json(curso);
+    }catch(err){
+        res.send("Error" + err)
+    }
+}
 
 const crearCursos = async(req,res)=>{
 
@@ -110,6 +118,8 @@ const borrarCurso = async (req, res)=>{
         }
     }
 
+    
+
 
 
 
@@ -118,5 +128,6 @@ module.exports = {
     crearCursos,
     getCursosPopulate,
     borrarCurso,
-    modificarCurso
+    modificarCurso,
+    leerUser
 }
