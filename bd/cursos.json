@@ -1,31 +1,269 @@
 [{
   "_id": {
-    "$oid": "6009ca5e63cbe61360068a74"
+    "$oid": "601942a36b3b7434c879f722"
   },
-  "titulo": "PSP",
-  "titulo2": "Programación de Servicios y Procesos",
-  "descripcion": "fasdfafd",
-  "descripcion2": "sadfasfdasdfas",
-  "descripcionGeneral": "asdfasdfasfdasdfasf",
-  "link": "asdfasdfasfd",
-  "precio": 300,
-  "tiempo": 150,
-  "imagen": "asdfadfasfd",
-  "imagen2": "adgfasdfasfa",
+  "oferta": false,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de Node2",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
   "__v": 0
 },{
   "_id": {
-    "$oid": "6009ce288370f636c039248b"
+    "$oid": "6021353474270b17ec5b621f"
   },
-  "titulo": "PS",
-  "titulo2": "Programación de Servicios y Procesos",
-  "descripcion": "fasdfafd",
-  "descripcion2": "sadfasfdasdfas",
-  "descripcionGeneral": "asdfasdfasfdasdfasf",
-  "link": "asdfasdfasfd",
-  "precio": 300,
-  "tiempo": 150,
-  "imagen": "asdfadfasfd",
-  "imagen2": "adgfasdfasfa",
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de trello",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022847e3e3deb3338e13f74"
+  },
+  "oferta": false,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de Node10",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022853d3e3deb3338e13f75"
+  },
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de C#",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602285413e3deb3338e13f76"
+  },
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de C++",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602285453e3deb3338e13f77"
+  },
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de Java",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022854a3e3deb3338e13f78"
+  },
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de JavaScript",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022855a3e3deb3338e13f79"
+  },
+  "oferta": true,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de Sistemas",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602285653e3deb3338e13f7a"
+  },
+  "oferta": false,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de flutter",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6022856a3e3deb3338e13f7b"
+  },
+  "oferta": false,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de dart",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602288a93e3deb3338e13f7c"
+  },
+  "oferta": false,
+  "clases": [
+    {
+      "$oid": "600ead4d6de77e22f0345045"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    }
+  ],
+  "titulo": "Curso de Phytom",
+  "titulo2": "Node en profuncidad",
+  "descripcion": "Más enumerados que nunca",
+  "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
+  "link": "https://www.campusomega.es/",
+  "precio": 750,
+  "tiempo": 65,
+  "imagen": "http://campusomega.es/img/blog1.jpg",
+  "imagen2": "/img1.jpg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60263193ee1c7e1068fbadc6"
+  },
+  "oferta": true,
+  "clases": [],
+  "imagen": "866fd9eb28a54416f14203a19f38d488.jpeg",
+  "imagen2": "de83f3a7d07330e1ebd830b30d480915.png",
+  "titulo": "aaaa",
+  "titulo2": "aaaa",
+  "descripcion": "ssss",
+  "descripcionGeneral": "ssss",
+  "precio": 1111,
+  "tiempo": 1111,
   "__v": 0
 }]

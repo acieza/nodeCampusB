@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "60192789f2afe429c4d6d14f"
+  },
+  "nombre": "TypeScript",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "60192789f2afe429c4d6d150"
+      },
+      "nombreTema": "enumerados",
+      "link": "c:/video.mp4",
+      "detalle": "video en MP4"
+    },
+    {
+      "_id": {
+        "$oid": "60192789f2afe429c4d6d151"
+      },
+      "nombreTema": "EventEmiter",
+      "link": "c:/video.mp4",
+      "detalle": "video en MP4"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "601929099193aa2b3c156784"
+  },
+  "nombre": "Bucles",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "601929099193aa2b3c156785"
+      },
+      "nombreTema": "For",
+      "link": "/video.mp4",
+      "detalle": "video en MP4"
+    },
+    {
+      "_id": {
+        "$oid": "601929099193aa2b3c156786"
+      },
+      "nombreTema": "do While",
+      "link": "/video.mp4",
+      "detalle": "video en MP4"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60193d3d9193aa2b3c156787"
+  },
+  "nombre": "Condicionales",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "60193d3d9193aa2b3c156788"
+      },
+      "nombreTema": "if",
+      "link": "/video.mp4",
+      "detalle": "video en MP4"
+    },
+    {
+      "_id": {
+        "$oid": "60193d3d9193aa2b3c156789"
+      },
+      "nombreTema": "else if",
+      "link": "/video.mp4",
+      "detalle": "video en MP4"
+    },
+    {
+      "_id": {
+        "$oid": "60193d3d9193aa2b3c15678a"
+      },
+      "nombreTema": "else",
+      "link": "/video.mp4",
+      "detalle": "video en MP4"
+    }
+  ],
+  "__v": 0
+}]

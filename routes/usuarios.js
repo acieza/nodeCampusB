@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario');
 const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser, buscarProfesor, buscarUser} = require('../controller/usuarios');
-const { paginarUsuarios } = require ('../controller/usuarios');
+const { paginarUsuarios, paginarUsuariosM } = require ('../controller/usuarios');
 const { check } = require('express-validator');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
@@ -30,6 +30,10 @@ router.get('/user', validarJWT, buscarUser);
 // PPAGINAR DESDE EL SERVIDOR //
 
 router.get('/paginas', paginarUsuarios);
+
+router.get('/paginasM', paginarUsuariosM);
+
+
 
 // AÑADIR USUARIO //
 
