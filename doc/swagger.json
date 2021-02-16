@@ -94,7 +94,7 @@
       }
     },
     "/usuarios/{id}": {
-      "put": {
+      "patch": {
         "tags": [
           "usuarios"
         ],
@@ -116,13 +116,15 @@
             "schema": {
               "$ref": "#/definitions/Usuario"
             }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "descripcion": "id usuario",
+            "required": true,
+            "type": "string"
           }
         ],
-        "int": "path",
-        "name": "id",
-        "descripcion": "id usuario",
-        "required": true,
-        "type": "string",
         "responses": {
           "400": {
             "description": "Fallo de validación"

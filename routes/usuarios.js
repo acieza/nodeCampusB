@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario');
-const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser, buscarProfesor, buscarUser} = require('../controller/usuarios');
-const { paginarUsuarios, paginarUsuariosM } = require ('../controller/usuarios');
+const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser, buscarProfesor, buscarUser, modificarUsuariorole} = require('../controller/usuarios');
+const { paginarUsuarios, paginarUsuariosM, getUnUser } = require ('../controller/usuarios');
 const { check } = require('express-validator');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
@@ -11,15 +11,36 @@ router.get('/', validarJWT , getUsuarios);
 
 router.get('/total', validarJWT, getUsuariosPopulate);
 
+router.get('/user/:id', validarJWT, getUnUser);
+
 // MODIFICAR USUARIO //
 
 router.put('/:id',[
     validarJWT, 
     check('nombre',' El campo nombre es requerido').not().isEmpty(),
     check('email',' El campo email es requerido').not().isEmpty(),
+   
     validarCampo,
    
 ], modificarUsuario );
+
+router.patch('/:id',[
+    validarJWT, 
+    check('nombre',' El campo nombre es requerido').not().isEmpty(),
+    check('email',' El campo email es requerido').not().isEmpty(),
+   
+    validarCampo,
+   
+], modificarUsuario );
+// router.put('/:id',[
+//     validarJWT, 
+//     check('nombre',' El campo nombre es requerido').not().isEmpty(),
+//     check('email',' El campo email es requerido').not().isEmpty(),
+//     check('role',' El campo role es requerido').not().isEmpty(),
+//     validarCampo,
+   
+// ], modificarUsuariorole );
+
 
 // BUSCAR FILTRANDO POR ROLE //
 

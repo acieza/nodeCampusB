@@ -1,6 +1,7 @@
 const Usuario = require('../models/usuario');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require('express-validator');
+const emailer = require('../helpers/emailer');
 
 const getUsuarios = async (req,res)=>{
     try{
@@ -15,13 +16,13 @@ const crearUsuarios = async(req,res)=>{
 
     const{email, password} = req.body;
   
-    const errores = validationResult(req) ;
-    if(!errores.isEmpty()){
-       return res.status(500).json({
-            ok:false,
-            error: errores.mapped()
-    });
-}
+//     const errores = validationResult(req) ;
+//     if(!errores.isEmpty()){
+//        return res.status(500).json({
+//             ok:false,
+//             error: errores.mapped()
+//     });
+// }
     
   
     try{
@@ -48,6 +49,9 @@ const crearUsuarios = async(req,res)=>{
         usuario.password = bcrypt.hashSync(password,salt);
 
         await usuario.save();
+        //enviar correo de confirmación//
+
+        emailer.sendMail(usuario);
 
         res.json({
             ok:true,
@@ -76,7 +80,54 @@ const getUsuariosPopulate = async (req,res)=>{
     }
 }
 
+const getUnUser = async (req, res) =>{
+    try{
+        const user = await Usuario.findById(req.params.id);
+        res.json(user);
+    }catch(err){
+        res.send("Error" + err)
+    }
+}
+
 const modificarUsuario = async(req,res) =>{
+    try{
+        const {email} =req.body
+        
+        const usuario = await Usuario.findById(req.params.id);
+
+        if(usuario.email != req.body.email){
+           
+      
+            const hayEmail = await Usuario.findOne({email});
+
+            if( hayEmail ){
+                    return res.status(400).json({
+                        ok:false,
+                        msg:"El correo ya existe"
+                    });
+        }
+    }
+    if(req.body.img){
+        usuario.img = req.body.img
+    }
+        usuario.email = req.body.email       
+        usuario.nombre = req.body.nombre
+        
+      
+
+        const usuario1 = await usuario.save();
+
+        res.json({
+            ok:true,
+            usuario
+        })
+        //res.json(usuario1);
+    }catch (err){
+        res.send("Error " + err);
+    }
+}
+
+const modificarUsuariorole = async(req,res) =>{
     try{
         const {email} =req.body
         
@@ -97,6 +148,7 @@ const modificarUsuario = async(req,res) =>{
         usuario.email = req.body.email
         usuario.img = req.body.img
         usuario.nombre = req.body.nombre
+        usuario.role = req.body.role
       
 
         const usuario1 = await usuario.save();
@@ -138,6 +190,8 @@ const borrarUser = async (req, res)=>{
             res.send("Error " + err);
         }
     }
+
+    
 
     const paginarUsuarios = async(req, res)=>{
         const page = parseInt(req.query.page)
@@ -249,5 +303,7 @@ module.exports = {
     buscarProfesor,
     buscarUser,
     paginarUsuarios,
-    paginarUsuariosM
+    paginarUsuariosM,
+   modificarUsuariorole,
+   getUnUser
 }
