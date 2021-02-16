@@ -112,7 +112,7 @@ const modificarUsuario = async(req,res) =>{
     }
         usuario.email = req.body.email       
         usuario.nombre = req.body.nombre
-        
+        //usuario.role = req.body.role
       
 
         const usuario1 = await usuario.save();
@@ -146,7 +146,6 @@ const modificarUsuariorole = async(req,res) =>{
         }
     }
         usuario.email = req.body.email
-        usuario.img = req.body.img
         usuario.nombre = req.body.nombre
         usuario.role = req.body.role
       

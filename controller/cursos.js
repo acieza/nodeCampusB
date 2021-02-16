@@ -105,6 +105,7 @@ const borrarCurso = async (req, res)=>{
             curso.descripcionGeneral = req.body.descripcionGeneral
             curso.precio = req.body.precio
             curso.tiempo = req.body.tiempo
+            curso.oferta = req.body.oferta
     
             const curso1 = await curso.save();
     

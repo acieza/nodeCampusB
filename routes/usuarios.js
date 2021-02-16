@@ -32,14 +32,14 @@ router.patch('/:id',[
     validarCampo,
    
 ], modificarUsuario );
-// router.put('/:id',[
-//     validarJWT, 
-//     check('nombre',' El campo nombre es requerido').not().isEmpty(),
-//     check('email',' El campo email es requerido').not().isEmpty(),
-//     check('role',' El campo role es requerido').not().isEmpty(),
-//     validarCampo,
+router.put('/user/:id',[
+    validarJWT, 
+    check('nombre',' El campo nombre es requerido').not().isEmpty(),
+    check('email',' El campo email es requerido').not().isEmpty(),
+    check('role',' El campo role es requerido').not().isEmpty(),
+    validarCampo,
    
-// ], modificarUsuariorole );
+], modificarUsuariorole );
 
 
 // BUSCAR FILTRANDO POR ROLE //

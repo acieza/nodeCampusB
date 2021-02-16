@@ -155,13 +155,13 @@ a[x-apple-data-detectors] {
                   <td align="center" valign="top" style="padding:0;Margin:0;width:560px"> 
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr> 
-                      <td align="left" style="padding:0;Margin:0;padding-bottom:15px"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:24px;font-style:normal;font-weight:normal;color:#333333">¡Bienvenido a&nbsp;la&nbsp;plataforma de Beta Academy!</h2></td> 
+                      <td align="left" style="padding:0;Margin:0;padding-bottom:15px"><h2 style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:24px;font-style:normal;font-weight:normal;color:#333333">¡Bienvenido a&nbsp;la&nbsp;plataforma de Beta Academy&nbsp;mi querido&nbsp;amigo/a!</h2></td> 
                      </tr> 
                      <tr> 
                       <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://ngcpbf.stripocdn.email/content/guids/CABINET_b3f4202d465817291cdfdb718fa80bdf/images/5041613465282966.jpg" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="560"></td> 
                      </tr> 
                      <tr> 
-                      <td align="left" style="padding:0;Margin:0;padding-top:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Ahora es&nbsp;el&nbsp;momento de&nbsp;insertar tu&nbsp;propio contenido arrastrando bloques y&nbsp;estructuras desde el&nbsp;panel izquierdo hasta esta zona de&nbsp;la&nbsp;plantilla.</p></td> 
+                      <td align="left" style="padding:0;Margin:0;padding-top:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Hola mi&nbsp;queridisimo&nbsp;mi querido&nbsp;amigo/a &nbsp;este es&nbsp;un mensaje&nbsp;de prueba&nbsp;espero que&nbsp;sea de&nbsp;tu agrado&nbsp; porfavor no&nbsp;contestes a&nbsp;este correo&nbsp;espero tu&nbsp;opinión más&nbsp;sincera</p></td> 
                      </tr> 
                      <tr> 
                       <td align="left" style="padding:0;Margin:0;padding-top:15px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Cuando tu&nbsp;correo electrónico esté listo, puedes guardarlo o&nbsp;exportando mediante uno de&nbsp;los métodos disponibles: a&nbsp;tu&nbsp;cuenta de&nbsp;MailChimp o&nbsp;como HTML&nbsp;puro.</p></td> 
