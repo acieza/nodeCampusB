@@ -2,10 +2,13 @@ const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario');
 const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser, buscarProfesor, buscarUser, modificarUsuariorole} = require('../controller/usuarios');
-const { paginarUsuarios, paginarUsuariosM, getUnUser } = require ('../controller/usuarios');
+const { paginarUsuarios, paginarUsuariosM, getUnUser, cargadeUsuarios } = require ('../controller/usuarios');
 const { check } = require('express-validator');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
+const multer = require('multer');
+const upload = multer({dest: 'public/file/'});
+
 
 router.get('/', validarJWT , getUsuarios);
 
@@ -64,5 +67,9 @@ router.post('/',[
     check('password',' El campo password es requerido').not().isEmpty(),
     validarCampo,
 ],crearUsuarios);
+
+//CARGA MASIVA//
+
+router.post('/cargarUsuarios', upload.single('archivo'), cargadeUsuarios)
 
 module.exports = router

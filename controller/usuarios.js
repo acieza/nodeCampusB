@@ -2,6 +2,9 @@ const Usuario = require('../models/usuario');
 const bcrypt = require('bcryptjs');
 const {validationResult} = require('express-validator');
 const emailer = require('../helpers/emailer');
+const fs = require('fs');
+const csv = require('csv-parser');
+const { pipeline } = require('stream');
 
 const getUsuarios = async (req,res)=>{
     try{
@@ -292,6 +295,61 @@ const borrarUser = async (req, res)=>{
         }
     }
 
+    //CARGA MASIVA//
+
+    const cargadeUsuarios = async (req,res) =>{
+        try{
+            var contador = 0;
+            const result = [];
+            console.log(req.file);
+            //CONVERTIR EL ARCHIVO A CSV COMO ERA ORIGINALMENTE//
+            fs.renameSync(req.file.path, req.file.path + '.' + req.file.mimetype.split('/')[1]);
+            
+            //RUTA PARA PODER ACCEDER A LOS FICHEROS//
+            var nombreArchivo = "public/file/" + req.file.filename + "." + req.file.mimetype.split('/')[1];
+
+            console.log(nombreArchivo);
+            //LEER ARCHIVO//
+            fs.createReadStream(nombreArchivo)
+                .pipe(csv({separator: ","}))
+                .on("data", (data) =>result.push(data))
+                .on("end", ()=>{
+                    console.log(result);
+                    //GUARDAR EN LA BASE DE DATOS//
+                    result.map(async (user) => {
+
+                        //Comprobar Email//
+                        const email = user.email;
+
+                        const hayEmail = await Usuario.findOne({ email });
+
+                        if (!hayEmail) {
+                            var usuario = new Usuario();
+                            usuario.nombre = user.nombre;
+                            usuario.email = user.email;
+                            //Encriptar Contraseña de Usuario//
+                            const salt = bcrypt.genSaltSync();
+                            usuario.password = bcrypt.hashSync(user.password, salt);
+                            usuario.role = user.role;
+                            usuario.save();
+                            contador++;
+                        }
+
+                    })
+                })
+
+            res.json({
+                ok: true,
+                msg:`${contador} Archivos subidos correctamente`
+            })
+        }catch(err){
+            res.status(500).json({
+                ok:false,
+                msg: 'error de servidor'
+            })
+        }
+    }
+
 
 module.exports = {
     getUsuarios,
@@ -303,6 +361,7 @@ module.exports = {
     buscarUser,
     paginarUsuarios,
     paginarUsuariosM,
-   modificarUsuariorole,
-   getUnUser
+    modificarUsuariorole,
+    getUnUser,
+    cargadeUsuarios
 }
