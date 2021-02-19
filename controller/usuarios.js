@@ -185,6 +185,7 @@ const modificarUsuariorole = async(req,res) =>{
         usuario.email = req.body.email
         usuario.nombre = req.body.nombre
         usuario.role = req.body.role
+        usuario.cursos= req.body.cursos
       
 
         const usuario1 = await usuario.save();
