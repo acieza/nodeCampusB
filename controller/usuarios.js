@@ -86,7 +86,7 @@ const getUsuariosPopulate = async (req,res)=>{
 const getUsuariosPopulateId = async (req,res)=>{
     try{
         const usuario = await Usuario.findById(req.params.id)
-        .select("nombre email role")
+        .select("nombre email role img")
         .populate("cursos","titulo titulo2 descripcion" )
         .exec()
         .then()
@@ -102,6 +102,27 @@ const getUnUser = async (req, res) =>{
         res.json(user);
     }catch(err){
         res.send("Error" + err)
+    }
+}
+
+const putUsuariosPopulateId = async(req,res) =>{
+    try{
+        const {email} =req.body
+        
+        const usuario = await Usuario.findById(req.params.id);
+ 
+        usuario.role = req.body.role
+        usuario.cursos = req.body.cursos._id
+
+        const usuario1 = await usuario.save();
+
+        res.json({
+            ok:true,
+            usuario
+        })
+        //res.json(usuario1);
+    }catch (err){
+        res.send("Error " + err);
     }
 }
 
@@ -377,5 +398,6 @@ module.exports = {
     modificarUsuariorole,
     getUnUser,
     cargadeUsuarios,
-    getUsuariosPopulateId
+    getUsuariosPopulateId,
+    putUsuariosPopulateId
 }

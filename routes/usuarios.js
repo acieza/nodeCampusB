@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Usuario = require('../models/usuario');
 const {getUsuarios, crearUsuarios, getUsuariosPopulate, modificarUsuario, borrarUser, buscarProfesor, buscarUser, modificarUsuariorole} = require('../controller/usuarios');
-const { paginarUsuarios, paginarUsuariosM, getUnUser, cargadeUsuarios, getUsuariosPopulateId } = require ('../controller/usuarios');
+const { paginarUsuarios, paginarUsuariosM, getUnUser, cargadeUsuarios, getUsuariosPopulateId, putUsuariosPopulateId } = require ('../controller/usuarios');
 const { check } = require('express-validator');
 const { validarCampo } = require('../middleware/validarCampo');
 const { validarJWT } = require('../middleware/validarJWT');
@@ -15,6 +15,8 @@ router.get('/', validarJWT , getUsuarios);
 router.get('/total', validarJWT, getUsuariosPopulate);
 
 router.get('/total/:id', getUsuariosPopulateId);
+
+// router.put('/total/:id', putUsuariosPopulateId);
 
 router.get('/user/:id', validarJWT, getUnUser);
 
