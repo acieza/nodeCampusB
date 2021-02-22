@@ -42,7 +42,7 @@ const sendMail = async (usuario) =>{
         attachments: [
           {   // use URL as an attachment
             filename: 'desarrollo.jpeg',
-            path: 'http://192.168.1.130:3000/img/5a408fd72ef56226faaa93f5e5861d66.jpeg'
+            path: 'http://192.168.1.44:3000/img/5a408fd72ef56226faaa93f5e5861d66.jpeg'
         },
         ]
     });

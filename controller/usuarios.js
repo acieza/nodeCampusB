@@ -338,10 +338,10 @@ const borrarUser = async (req, res)=>{
             const result = [];
             console.log(req.file);
             //CONVERTIR EL ARCHIVO A CSV COMO ERA ORIGINALMENTE//
-            fs.renameSync(req.file.path, req.file.path + '.' + req.file.mimetype.split('/')[1]);
+            fs.renameSync(req.file.path, req.file.path + '.' + req.file.originalname.split('/')[1]);
             
             //RUTA PARA PODER ACCEDER A LOS FICHEROS//
-            var nombreArchivo = "public/file/" + req.file.filename + "." + req.file.mimetype.split('/')[1];
+            var nombreArchivo = "public/file/" + req.file.filename + "." + req.file.originalname.split('/')[1];
 
             console.log(nombreArchivo);
             //LEER ARCHIVO//
