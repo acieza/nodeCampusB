@@ -53,7 +53,7 @@ router.put('/user/:id',[
 
 router.delete('/:id', validarJWT, borrarUser);
 router.get('/profesor', validarJWT, buscarProfesor);
-router.get('/user', validarJWT, buscarUser);
+router.get('/user', buscarUser);
 
 // PPAGINAR DESDE EL SERVIDOR //
 
