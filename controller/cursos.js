@@ -69,6 +69,20 @@ const getCursosPopulate = async (req,res)=>{
     }
 }
 
+const getCursosPopulateId = async (req, res) => {
+    
+    try{
+         const curso = await Curso.findById(req.params.id)
+        .select("_id titulo descripcion")
+        .populate("clases", "nombre temas.nombreTema temas.link temas.detalle")
+        .exec()
+        .then()
+    res.json(curso);
+    }catch(err){
+        res.send("Error" + err)
+    }
+}
+
 const borrarCurso = async (req, res)=>{
     try{
         const curso = await Curso.findById(req.params.id)
@@ -130,5 +144,6 @@ module.exports = {
     getCursosPopulate,
     borrarCurso,
     modificarCurso,
-    leerUser
+    leerUser,
+    getCursosPopulateId
 }
