@@ -52,7 +52,7 @@ router.put('/user/:id',[
 // BUSCAR FILTRANDO POR ROLE //
 
 router.delete('/:id', validarJWT, borrarUser);
-router.get('/profesor', validarJWT, buscarProfesor);
+router.get('/profesor', buscarProfesor);
 router.get('/user', buscarUser);
 
 // PPAGINAR DESDE EL SERVIDOR //
