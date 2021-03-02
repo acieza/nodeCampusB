@@ -1,80 +1,32 @@
 [{
   "_id": {
-    "$oid": "601a56592140c52b98ae558c"
-  },
-  "role": "user",
-  "cursos": [
-    {
-      "$oid": "601942a36b3b7434c879f722"
-    },
-    {
-      "$oid": "60194b811173fc1c5cc5300e"
-    }
-  ],
-  "nombre": "juan",
-  "email": "juan@gmail.com",
-  "password": "$2a$10$lAFjLQJcxnuUL8x1Z8pkTON/9g3Mp3g5FXXwIo6JUl3hy18e/Q7CK",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "601a56db2140c52b98ae558d"
-  },
-  "role": "admin",
-  "cursos": [
-    {
-      "$oid": "601942a36b3b7434c879f722"
-    },
-    {
-      "$oid": "60194b811173fc1c5cc5300e"
-    },
-    {
-      "$oid": "60194f145884d82440ba0aac"
-    }
-  ],
-  "nombre": "asaci03",
-  "email": "asanjuancieza@gmail.com",
-  "password": "$2a$10$YMD7BUbQn01HMfnmP4wyL.LC.WWevwYogNHUezLTYK.FuPj3h7FiO",
-  "__v": 0,
-  "img": "7c84f8e5ad7b4cd8ba6fa8e34477bf94.jpeg"
-},{
-  "_id": {
     "$oid": "601a6074bffc1c2bc43ac070"
   },
-  "role": "user",
+  "role": "profesor",
   "cursos": [
     {
       "$oid": "601942a36b3b7434c879f722"
     },
     {
-      "$oid": "60194b811173fc1c5cc5300e"
-    },
-    {
-      "$oid": "60194f145884d82440ba0aac"
+      "$oid": "6022847e3e3deb3338e13f74"
     }
   ],
   "nombre": "sandriitaFer",
   "email": "sandra@gmail.com",
   "password": "$2a$10$b2xCj3G0Zov5Z5lpTROYOufS38sjJzvP0EYeVeHCgrkl/WGiDK2MW",
   "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
-  "__v": 0
+  "__v": 1
 },{
   "_id": {
     "$oid": "601a60cbbffc1c2bc43ac071"
   },
   "role": "user",
-  "cursos": [
-    {
-      "$oid": "601942a36b3b7434c879f722"
-    },
-    {
-      "$oid": "60194b811173fc1c5cc5300e"
-    }
-  ],
+  "cursos": [],
   "nombre": "G.escaño",
   "email": "guille@gmail.com",
   "password": "$2a$10$aUWFKoeuVD7JlUkZXeuz/ukU9V24KEUoAu5fJprTTl1SbpkfobtO.",
   "img": "avatarh2.jpg",
-  "__v": 0
+  "__v": 1
 },{
   "_id": {
     "$oid": "601a6102bffc1c2bc43ac072"
@@ -316,24 +268,487 @@
   "__v": 0
 },{
   "_id": {
-    "$oid": "602524bbfc170f37d8e092f4"
+    "$oid": "602b830025a0313670fa079b"
   },
   "role": "user",
   "cursos": [],
-  "nombre": "Palido",
-  "email": "palido@gmail.com",
-  "password": "$2a$10$mjQENa2TJ18Qwkz.HPYFoOHMiWJ603WT5Azl8bQb05NZ1J40Kd67e",
-  "img": "66.jpg",
+  "nombre": "Ana R.",
+  "email": "ana@gmail.com",
+  "password": "$2a$10$Ssp1iK9ioq084dQd/4LsLeNcEy1KDriT6xIAwaxTPp/j0.kBIHn16",
   "__v": 0
 },{
   "_id": {
-    "$oid": "60252564fc170f37d8e092f5"
+    "$oid": "602b88774bba0d38a8080564"
   },
   "role": "user",
   "cursos": [],
-  "nombre": "Palida",
-  "email": "palida@gmail.com",
-  "password": "$2a$10$532JvyKfmgZei0Rtb7ORguyXtXgHICW.Vgr.dGhRD5JdcectyZplS",
-  "img": "66.jpg",
+  "nombre": "berta",
+  "email": "berta@gmail.com",
+  "password": "$2a$10$YnJiJ0v8FMPm1/5s7/4RTeyTC0SbpOZ.afT2FCNEieadua2HKf54a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602b89ac7bd050096437f9a4"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "alfred",
+  "email": "alfred@gmail.com",
+  "password": "$2a$10$fUien82aGvdKvQvQOlODee5MiPi3zBc/mo1oMuhlSEgYe.yeiZqwe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602baa6339bcef1b488544be"
+  },
+  "role": "admin",
+  "cursos": [],
+  "nombre": "asaci03",
+  "email": "asanjuancieza@gmail.com",
+  "password": "$2a$10$N.xJ6dVSpxK611BWGtRSW.1NuaR/eCBuqJaLvP14HD3QkaoroAh.e",
+  "__v": 0,
+  "img": "37557d4affd1d081debc7117333a831c.jpeg"
+},{
+  "_id": {
+    "$oid": "602bab4339bcef1b488544bf"
+  },
+  "cursos": [],
+  "nombre": "Sandra",
+  "email": "sandrafernandezman@gmail.com",
+  "password": "$2a$10$BNiRrbAOqn0LmaR3URXU8.LaHe0r/NEAfsfCnFxIjle/rNvHY.k2e",
+  "__v": 0,
+  "role": "user",
+  "img": "df2bde5500ec85448e68be7ff8881a69.jpeg"
+},{
+  "_id": {
+    "$oid": "602ce07dd99e0e192caec568"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Alberto",
+  "email": "albertot@gmail.com",
+  "password": "$2a$10$q/yr06NMskEJeQzJcgyy8eiOqAx/AfIGXo3nNfInDS9DkHtJg6r3S",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ce07dd99e0e192caec56b"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Antonia",
+  "email": "antonia@gmail.com",
+  "password": "$2a$10$FcWq6y3anMh8.VrCQ5JaNexeCvumDwMFGIVPCnfYFB8aO5gIAGePe",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ce64ad57cbb1ff027da83"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Anita",
+  "email": "anita@gmail.com",
+  "password": "$2a$10$asiZjCEayT21ytt41OyHCuuL7b5HdZielFmHFzjQAgPnhcACrJ6Du",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ce64bd57cbb1ff027da84"
+  },
+  "role": "profesor",
+  "cursos": [],
+  "nombre": "Juana",
+  "email": "juana@gmail.com",
+  "password": "$2a$10$F042kynP2DClT72UCvoJEuOBe4tTRcseL1BvFnbJJNPglqwE.DCtq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602ce64bd57cbb1ff027da85"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Sara",
+  "email": "sara@gmail.com",
+  "password": "$2a$10$TUS.2LEvgMMmsFsYC2eM6.JtIFDuX4T4duR7eXljEW0LuQzWqDN0a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa468ba3cdd1f94c1ec66"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "fede",
+  "email": "fede@gmail.com",
+  "password": "$2a$10$8fxjLvOw13FRyDxvL9b7.uKrpn0n86SJLednroT8ohgAfEpuI7VQ6",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa479ba3cdd1f94c1ec67"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Maria Isabel",
+  "email": "mari@gmail.com",
+  "password": "$2a$10$PbKlduj142XlF.BrC3Rcd.XeNGkOjDZcl78yvYam7LlwFJTLV6r.C",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa48eba3cdd1f94c1ec68"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "cesareo",
+  "email": "cesareo@gmail.com",
+  "password": "$2a$10$G/2kWh/ZrVLzw9NyocSsb.GUkCFxa7AYyqmuFhCWYl5oV3WhusGKO",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa4b3ba3cdd1f94c1ec69"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "estocolmo",
+  "email": "estocolmo@gmail.com",
+  "password": "$2a$10$nComU7WQpPKXRyi1p3xiqerNp.AAuEGBRP6sX1cfM5CTLvjkLykWq",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa4cbba3cdd1f94c1ec6a"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Eustaquio",
+  "email": "eus@gmail.com",
+  "password": "$2a$10$1DikumDf9pMFRDhVwmMFkeycVK52iU/26j3Zt7mL0P8US.70/iqFe",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa4d7ba3cdd1f94c1ec6b"
+  },
+  "role": "profesor",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    }
+  ],
+  "nombre": "peter",
+  "email": "peter@gmail.com",
+  "password": "$2a$10$/x23RsB0DvqT0sOR91Mf7unDj64C1jw5Q7F559aIBNcuY7ky.QSOe",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "602fa4e2ba3cdd1f94c1ec6c"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Bob",
+  "email": "bob@gmail.com",
+  "password": "$2a$10$bdNov4kbL.N1EelxoI5V1uUUkf6oQguteNKBuCZfE.bXmkEpB/BhK",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa4f9ba3cdd1f94c1ec6d"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "600ebbd76de77e22f0345047"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Joe",
+  "email": "joe@gmail.com",
+  "password": "$2a$10$20iD8VF2SWuYl9gkCJQWmOVq8UdYTvb648Grh.Zg.x.XO6nxeqcVi",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "602fa514ba3cdd1f94c1ec6e"
+  },
+  "role": "profesor",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6021353474270b17ec5b621f"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Rusia",
+  "email": "rusia@gmail.com",
+  "password": "$2a$10$mFvXJfL5esAI4JntP3VqkuSbMJUMhUn6pqHNh9jPG319kWbLK7Fd.",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "602fa524ba3cdd1f94c1ec6f"
+  },
+  "role": "user",
+  "cursos": [
+    {
+      "$oid": "601942a36b3b7434c879f722"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022847e3e3deb3338e13f74"
+    },
+    {
+      "$oid": "6022853d3e3deb3338e13f75"
+    },
+    {
+      "$oid": "602285413e3deb3338e13f76"
+    },
+    {
+      "$oid": "602285453e3deb3338e13f77"
+    }
+  ],
+  "nombre": "Beirut",
+  "email": "beirut@gmail.com",
+  "password": "$2a$10$KV7/H1Xsow.Bm6HG1RR3bux7PbagVkDFPn/BS5Kx93aMZxOHxsbeK",
+  "img": "51e8e609670a124f9d911a2959b3c230.jpeg",
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "60336a978ceb392550a237f2"
+  },
+  "role": "profesor",
+  "cursos": [],
+  "nombre": "Juan",
+  "email": "juanito@gmail.com",
+  "password": "$2a$10$T7Jqcyu9fMHKa10lTgmf3O69HbfEYBSQtf1KtGpXXwQWDY7ZSomNu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60336be915c3692180da9b61"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Paco",
+  "email": "pacomer@gmail.com",
+  "password": "$2a$10$Qx1iZRfPDAXkQqahK9QB7u0iYXH2xeTvWNHm1mB389Mwao.fH44le",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60336be915c3692180da9b62"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Antonio",
+  "email": "antonio@gmail.com",
+  "password": "$2a$10$eAS9pkOjtsDgY5ZIFRus1.x.EL.wv0mc7PfDZwdC5GALUF6zJCVri",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60336be915c3692180da9b63"
+  },
+  "role": "profesor",
+  "cursos": [],
+  "nombre": "Jaime",
+  "email": "jaime@gmail.com",
+  "password": "$2a$10$rBlzw0A/rAxuHyEgNZszeei2L8nsApgOphfT8yO6qGr0DDJOVL9VC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60362531db8c611bf8c2ab7b"
+  },
+  "role": "user",
+  "cursos": [],
+  "nombre": "Steve R.",
+  "email": "capitanamerica@outlook.com",
+  "password": "$2a$10$Y.o.B8gkjlmhY59i6GkeXOBwQ9ot9VgpVd.y7y8zrOkTghliLRzi6",
   "__v": 0
 }]

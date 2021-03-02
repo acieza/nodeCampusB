@@ -5,10 +5,10 @@
   "oferta": false,
   "clases": [
     {
-      "$oid": "600ead4d6de77e22f0345045"
+      "$oid": "60192789f2afe429c4d6d14f"
     },
     {
-      "$oid": "600ebbd76de77e22f0345047"
+      "$oid": "601929099193aa2b3c156784"
     }
   ],
   "titulo": "Curso de Node2",
@@ -18,8 +18,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "4c35e2c92e2ed267c4232f54fb8a6fa4.jpeg",
+  "imagen2": "f7f5caf8611f9724a65933508bcb5916.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -28,21 +28,21 @@
   "oferta": true,
   "clases": [
     {
-      "$oid": "600ead4d6de77e22f0345045"
+      "$oid": "60192789f2afe429c4d6d14f"
     },
     {
-      "$oid": "600ebbd76de77e22f0345047"
+      "$oid": "60193d3d9193aa2b3c156787"
     }
   ],
-  "titulo": "Curso de trello",
+  "titulo": "Curso de trelloo",
   "titulo2": "Node en profuncidad",
   "descripcion": "Más enumerados que nunca",
   "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
   "link": "https://www.campusomega.es/",
-  "precio": 750,
-  "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "precio": 1250,
+  "tiempo": 240,
+  "imagen": "cdd5e37ba769bfa9618881a79ca2fd32.jpeg",
+  "imagen2": "20d4eeeeca9888ad2896dbd985278b0c.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -64,8 +64,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "7860aa760dfd9297b3283f78c67956a6.jpeg",
+  "imagen2": "d21e93a54d48e7c0c85a6314aadf2d05.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -87,8 +87,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "0a535b989043b05af68a4530b92eef79.jpeg",
+  "imagen2": "2497eb3ea7b35198861638c7026a841a.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -108,10 +108,10 @@
   "descripcion": "Más enumerados que nunca",
   "descripcionGeneral": "Este ciclo está centrado en el desarrollo, implantación y mantenimiento de sitios y aplicaciones web, tanto en su faceta de desarrollo frontend (HTML, CSS, Javascript) como backend (PHP, Ruby, Node.js, SQL, etc).Sus titulados optan a salidas profesionales como Diseñador Web, desarrollador Full Stack, Especialista en SEO, etc",
   "link": "https://www.campusomega.es/",
-  "precio": 750,
+  "precio": 7500,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "033dc9cb6dff596b563c4850faaa8d1b.jpeg",
+  "imagen2": "7dc0bb2b6f00801b915de658b435512c.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -133,8 +133,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "fb10e4ccb76f879c305c63eb44cdf5c9.jpeg",
+  "imagen2": "21e50f9b5b7ef99ffa40c87a98fa509c.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -156,8 +156,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "65e8ef8f6273030c49d9d9302f8c85ef.jpeg",
+  "imagen2": "42f11e600cba8c907d40492f97fefafc.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -179,8 +179,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "2de9a07239bf5b74ea891a7ad6fe1b2a.jpeg",
+  "imagen2": "5765c258201fa30771c450a3c865aca4.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -202,8 +202,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "6c3c717fc7ec3c98a9a9b4b25a46b040.jpeg",
+  "imagen2": "b074185495950661736188007e64714e.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -225,8 +225,8 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "b972ba8de52e57794c8e18f2b1c497d9.jpeg",
+  "imagen2": "c2ecd9ee17992ec9d1966045a962ead5.jpeg",
   "__v": 0
 },{
   "_id": {
@@ -248,22 +248,22 @@
   "link": "https://www.campusomega.es/",
   "precio": 750,
   "tiempo": 65,
-  "imagen": "http://campusomega.es/img/blog1.jpg",
-  "imagen2": "/img1.jpg",
+  "imagen": "f22bb62f70469ba6a144c4d507e9f25a.jpeg",
+  "imagen2": "f02448f06e46151349044244b75e54b6.jpeg",
   "__v": 0
 },{
   "_id": {
-    "$oid": "60263193ee1c7e1068fbadc6"
+    "$oid": "602678ef6ee6c71898f7b000"
   },
   "oferta": true,
   "clases": [],
-  "imagen": "866fd9eb28a54416f14203a19f38d488.jpeg",
-  "imagen2": "de83f3a7d07330e1ebd830b30d480915.png",
-  "titulo": "aaaa",
-  "titulo2": "aaaa",
-  "descripcion": "ssss",
-  "descripcionGeneral": "ssss",
-  "precio": 1111,
-  "tiempo": 1111,
+  "imagen": "e54aa667220f1f1e69c8cac3f64ed193.jpeg",
+  "imagen2": "b95699c94ce1b1cba964dc4f327a9187.jpeg",
+  "titulo": "Node5",
+  "titulo2": "Node5 js",
+  "descripcion": "aaaaaa",
+  "descripcionGeneral": "aaaaaaa",
+  "precio": 1256,
+  "tiempo": 622,
   "__v": 0
 }]
