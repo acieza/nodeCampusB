@@ -12,7 +12,7 @@ const upload = multer({dest: 'public/file/'});
 
 router.get('/', validarJWT , getUsuarios);
 
-router.get('/total', validarJWT, getUsuariosPopulate);
+router.get('/total', getUsuariosPopulate);
 
 router.get('/total/:id', getUsuariosPopulateId);
 

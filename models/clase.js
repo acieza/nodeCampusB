@@ -20,7 +20,7 @@ const claseSchema = new mongoose.Schema({
         },
         detalle:{
             type: String
-        },
+        }
     }]
     
     

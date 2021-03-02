@@ -74,7 +74,7 @@ const getUsuariosPopulate = async (req,res)=>{
     try{
         const usuario = await Usuario.find()
         .select("_id nombre email role")
-        .populate("cursos","titulo titulo2 descripcion" )
+        .populate("cursos","titulo titulo2 descripcion precio tiempo" )
         .exec()
         .then()
         res.json(usuario);
@@ -87,7 +87,7 @@ const getUsuariosPopulateId = async (req,res)=>{
     try{
         const usuario = await Usuario.findById(req.params.id)
         .select("nombre email role img")
-        .populate("cursos","titulo titulo2 descripcion" )
+        .populate("cursos","titulo titulo2 descripcion precio tiempo oferta" )
         .exec()
         .then()
         res.json(usuario);
