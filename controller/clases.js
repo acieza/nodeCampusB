@@ -33,7 +33,8 @@ const crearClases = async ( req,res)=>{
         const clase = new Clase(req.body)
 
         await clase.save();
-
+        // const curso = await curso.findOne({titulo});
+        // curso.clases.push(res.clases.id)
         res.json({
             ok:true,
             clase
