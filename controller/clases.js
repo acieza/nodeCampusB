@@ -1,6 +1,7 @@
 const express = require('express');
 const Clase = require('../models/clase');
 const {validationResult} = require('express-validator');
+const Curso = require('../models/curso');
 
 const getClases = async (req,res)=>{
     try{
@@ -33,10 +34,17 @@ const crearClases = async ( req,res)=>{
         const clase = new Clase(req.body)
 
         await clase.save();
-        // const curso = await curso.findOne({titulo});
-        // curso.clases.push(res.clases.id)
+
+         const valorId = req.params.id;
+        // / const valorClase = clase._id;
+         const curso = await Curso.findById(valorId);
+
+         curso.clases.push(clase.id);
+        await curso.save();
         res.json({
-            ok:true,
+            // valorClase,
+            // valorId,
+            // ok:true,
             clase
         })
     }catch(err){

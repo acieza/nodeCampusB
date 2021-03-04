@@ -9,8 +9,8 @@ const { validarJWT } = require('../middleware/validarJWT');
 
 router.get('/',getClases);
 
-router.post('/',[
-    validarJWT,
+router.post('/:id',[
+    // validarJWT,
     check('nombre','El campo nombre es requerido').not().isEmpty(),
     // check('nombreTema','El campo nombreTema es requerido').not().isEmpty(),
     // check('link','El campo link es requerido').not().isEmpty(),
