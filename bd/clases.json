@@ -1,80 +1,136 @@
 [{
   "_id": {
-    "$oid": "60192789f2afe429c4d6d14f"
+    "$oid": "603dfd90b38bbd39bcbe41bc"
   },
-  "nombre": "TypeScript",
+  "nombre": "Condicionaless",
   "temas": [
     {
       "_id": {
-        "$oid": "60192789f2afe429c4d6d150"
+        "$oid": "603d392286bee62cb80882a4"
       },
-      "nombreTema": "enumerados",
-      "link": "https://www.youtube.com/embed/DwriSApbm50",
-      "detalle": "video en MP4"
-    },
-    {
-      "_id": {
-        "$oid": "60192789f2afe429c4d6d151"
-      },
-      "nombreTema": "EventEmiter",
-      "link": "c:/video.mp4",
-      "detalle": "video en MP4"
+      "nombreTema": "if/else if/else",
+      "link": "www.campusomega.es",
+      "detalle": "Uso de condicionales en leguaje Java"
     }
   ],
   "__v": 0
 },{
   "_id": {
-    "$oid": "601929099193aa2b3c156784"
+    "$oid": "603e1ad5b38bbd39bcbe41c0"
   },
   "nombre": "Bucles",
   "temas": [
     {
       "_id": {
-        "$oid": "601929099193aa2b3c156785"
+        "$oid": "603e1ad5b38bbd39bcbe41c1"
       },
       "nombreTema": "For",
-      "link": "/video.mp4",
-      "detalle": "video en MP4"
-    },
-    {
-      "_id": {
-        "$oid": "601929099193aa2b3c156786"
-      },
-      "nombreTema": "do While",
-      "link": "/video.mp4",
-      "detalle": "video en MP4"
+      "link": "www.campusomega.es",
+      "detalle": "Uso de For en leguaje Java"
     }
   ],
   "__v": 0
 },{
   "_id": {
-    "$oid": "60193d3d9193aa2b3c156787"
+    "$oid": "6043565272eb0a380ce2591b"
   },
-  "nombre": "Condicionales",
+  "nombre": "Condicionales Java",
   "temas": [
     {
       "_id": {
-        "$oid": "60193d3d9193aa2b3c156788"
+        "$oid": "6043565272eb0a380ce2591c"
       },
-      "nombreTema": "if",
-      "link": "/video.mp4",
-      "detalle": "video en MP4"
+      "nombreTema": "if/else",
+      "link": "https://www.youtube.com/embed/pwVppK3RgyI",
+      "detalle": "Curso JAVA - En esta entrega del curso de programación en JAVA aprenderás lo que son las estructuras condicionales con If-Else, además de como utilizarlas en la aplicación de un programa.\n"
     },
     {
       "_id": {
-        "$oid": "60193d3d9193aa2b3c156789"
+        "$oid": "6043565272eb0a380ce2591d"
       },
-      "nombreTema": "else if",
-      "link": "/video.mp4",
-      "detalle": "video en MP4"
+      "nombreTema": "Bucle For",
+      "link": "https://www.youtube.com/embed/GnIdk6Rvj1I",
+      "detalle": "Curso JAVA - En esta entrega aprenderás a utilizar los ciclos o también conocidos como bucles en programación con ayuda de la \"estructura repetitiva for\". Hay que mencionar que un \"for\" es una de las más utilizadas en la mayoría de los lenguajes de programación, siendo esta misma de gran importancia en la muchos de los programas desarrollados hoy en día."
     },
     {
       "_id": {
-        "$oid": "60193d3d9193aa2b3c15678a"
+        "$oid": "6043565272eb0a380ce2591e"
       },
-      "nombreTema": "else",
-      "link": "/video.mp4",
-      "detalle": "video en MP4"
+      "nombreTema": "Bucle while",
+      "link": "https://www.youtube.com/embed/Q50omd0WitY",
+      "detalle": "Curso de programación JAVA - En esta entrega aprenderás a utilizar una alternativa para crear ciclos o bucles en JAVA con la estructura repetitiva while."
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043582c72eb0a380ce2591f"
+  },
+  "nombre": "NodeJS",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "6043582c72eb0a380ce25920"
+      },
+      "nombreTema": "Que es Node?",
+      "link": "https://www.youtube.com/embed/9U8EaVjuq6U",
+      "detalle": "SI ya has venido trabajando con HTML, CSS, y Javascript y ahora quieres aprender un lenguaje del lado del servidor o del lado Backend, puede empezar con Node.js. Node.js es un interprete de javascript que te permite ejecutar código de una manera veloz gracias a que usa el mismo motor de google llamado V8."
+    },
+    {
+      "_id": {
+        "$oid": "6043582c72eb0a380ce25921"
+      },
+      "nombreTema": "Node introduccion",
+      "link": "https://www.youtube.com/embed/VHOd-RBj1MA",
+      "detalle": "Inicio del curso de Node JS Coders, en esta entrega de tutoriales aprenderémos esta genial tecnología que nos permitirá tener a JavaScript del lado del servidor, veremos temas desde lo más básico hasta la desplegar nuestro proyecto en la nube."
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604358c272eb0a380ce25922"
+  },
+  "nombre": "NodeJS Express",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "604358c272eb0a380ce25923"
+      },
+      "nombreTema": "Expressjs | Nodejs Framework para Principiantes",
+      "link": "https://www.youtube.com/embed/794Q71KVw1k",
+      "detalle": "Este es el curso de Expressjs, el framework de Nodejs para la creacion de aplicaciones del lado servidor utilizando Javascript.\nAprenderemos conceptos tipicos del backend como routing, middlewares, manejo de peticiones y respuestas y archivos estaticos."
+    },
+    {
+      "_id": {
+        "$oid": "604358c272eb0a380ce25924"
+      },
+      "nombreTema": "Introducción a Express.js ",
+      "link": "https://www.youtube.com/embed/VmH4tPbbDsM",
+      "detalle": "Con Express JS podemos configurar nuestro servidor Http de una manera mucho más sencilla, en este video veremos una introducción a Express.js en Node.js"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6043597772eb0a380ce25925"
+  },
+  "nombre": " Mongoose",
+  "temas": [
+    {
+      "_id": {
+        "$oid": "6043597772eb0a380ce25926"
+      },
+      "nombreTema": " Mongoose | Introducccion ",
+      "link": "https://www.youtube.com/embed/gfP3aqV38q4",
+      "detalle": "Mongoose es un ORM y al mismo tiempo una biblioteca de npm y Nodejs, que permite interactuar con Mongodb a traves de orientación a objetos y funciones que permiten interactuar con documentos, coleccion y base de datos fácilmente."
+    },
+    {
+      "_id": {
+        "$oid": "6043597772eb0a380ce25927"
+      },
+      "nombreTema": "MongoDB and Mongoose | Creating a REST API with Node.js",
+      "link": "https://www.youtube.com/embed/WDrU305J1yw",
+      "detalle": "Time to not only handle our data in the endpoints (and then let the data go into the void) but to actually add a database: MongoDB!"
     }
   ],
   "__v": 0
